@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="wrapper-inner">
+          <p>Converting Сrypto to USD <i class="fa-solid fa-repeat"></i></p>
+          <div class="wrapper-inner__chose">
+            <input
+              type="number"
+              class="wrapper-inner__input"
+              placeholder="1.00"
+            />
+
+            <select name="from" class="from-crypto" id="from-crypto">
+              <option value="BTC">Bitcoin</option>
+              <option value="ETH">Ethereum</option>
+            </select>
+          </div>
+
+          <button class="btn" type="submit">Convert</button>
+          <div class="wrapper-inner__values">
+            <div class="wrapper-inner__value"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

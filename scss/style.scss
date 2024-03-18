@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+p {
+  font-size: 24px;
+  align-items: center;
+  padding: 40px;
+}
+
+body {
+  background-color: #0f121b;
+  color: #fff;
+}
+
+button {
+  font-weight: bold;
+  padding: 12px;
+  width: 110px;
+  height: 40px;
+  background-color: #1b2336;
+  color: #fff;
+
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 20px;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+.container {
+  margin: 0 auto;
+
+  width: 1200px;
+  min-width: 1200px;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  &:after,
+  &:before {
+    position: absolute;
+    content: "";
+    display: block;
+  }
+
+  &:before {
+    width: 144px;
+    height: 144px;
+    bottom: 150px;
+    left: 750px;
+    background: url(./../assets/ethereum3.png) no-repeat center/contain;
+    z-index: 1;
+    transform: rotate(20deg);
+  }
+
+  &:after {
+    width: 200px;
+    height: 200px;
+    top: 100px;
+    right: 750px;
+    background: url(./../assets/bitcoin.png) no-repeat center/contain;
+    z-index: 1;
+  }
+
+  &-inner {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    width: 500px;
+    height: 350px;
+    border-radius: 5px;
+    background-color: #131a2a;
+
+    &__input {
+      background-color: #212b44;
+      border-radius: 8px;
+      padding: 6px;
+    }
+  }
+}
+
+.from-crypto {
+  font-weight: bold;
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+  color: #fff;
+  background-color: #212b44;
+  border-radius: 10px;
+  cursor: pointer;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"),
+    linear-gradient(to bottom, #212b44);
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+}
+
+.wrapper-inner__value {
+  background-color: #212b44;
+  border: 1px solid #000;
+  color: #fff;
+
+  border-radius: 10px;
+  padding: 12px;
+}
